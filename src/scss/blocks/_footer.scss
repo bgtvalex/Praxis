@@ -1,0 +1,156 @@
+.footer {
+  background-color: #eeefef;
+  padding: 64px 40px;
+  font-size: 32px;
+  color: var(--black);
+}
+
+.footer__header,
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer__header {
+  border-bottom: 1px solid rgba(28, 28, 28, 0.2);
+  padding-bottom: 28px;
+	display: flex;
+	align-items: center;
+}
+
+.footer__body {
+  padding-top: 40px;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+	max-width: 470px;
+}
+
+.footer__right {
+  display: flex;
+  justify-content: start;
+  max-width: 550px;
+  gap: 30px;
+}
+
+.footer__right--right {
+	display: flex;
+	align-items: center;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  margin-bottom: 50px;
+}
+
+.footer__text {
+  max-width: 250px;
+  color: rgba(40, 40, 40, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125;
+  letter-spacing: 0.32px;
+}
+
+.footer__btn {
+	color: var(--white);
+}
+
+ul.footer__nav {
+	border-right: 1px solid rgba(28, 28, 28, 0.2);
+	padding-right: 52px;
+}
+
+ul.footer__refs {
+	padding-right: 40px;
+}
+
+.footer__item {
+	margin-bottom: 16px;
+	max-width: 212px;
+
+  a {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125;
+
+		&:hover {
+			opacity: .4;
+		}
+  }
+}
+
+
+@media (max-width: 1023px) {
+
+  .footer {
+    padding: 32px 40px;
+  }
+  .footer__header {
+    font-size: 24px;
+  }
+
+  .footer__right--right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 32px 0;
+  }
+
+  .footer__row {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+  .footer__header {
+    flex-direction: column;
+    border-bottom: none;
+    padding-top: 20px;
+  }
+
+  .footer__right--right {
+    flex-direction: column;
+  }
+
+  .footer__body {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(28, 28, 28, 0.2);
+  }
+
+  .footer__left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer__right {
+    flex-direction: column;
+  }
+  ul.footer__nav,
+  ul.footer__refs {
+    padding-right: 0;
+    border-right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // text-align: center;
+  }
+}

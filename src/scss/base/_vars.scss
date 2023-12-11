@@ -1,0 +1,21 @@
+:root {
+	// --container-width: 1440px;
+	--container-width: 1246px;
+	--container-padding: 15px;
+
+	--font-main: 'CoFo Sans', sans-serif;
+
+	--white: #fff;
+	--black: #282828;
+	--color-text: rgba(40, 40, 40, 0.80);
+	--gray: rgba(40, 40, 40, 0.60);
+	--gray-light: #ECEDEE;
+	--accent: rgb(133, 26, 70);
+	--accent-text: #8C1843;
+	--green: #CDEA72;
+}
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}

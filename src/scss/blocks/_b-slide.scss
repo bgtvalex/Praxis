@@ -1,0 +1,100 @@
+.b-slide {
+  width: 100%;
+  height: 100vh;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.b-slide--01 {
+  background: linear-gradient(
+      180deg,
+      rgba(22, 31, 38, 0) 70.13%,
+      rgba(22, 31, 38, 0.6) 100%
+    ),
+    linear-gradient(0deg, rgba(22, 31, 38, 0.4) 0%, rgba(22, 31, 38, 0.4) 100%),
+    url(./../../img/benefits/01-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply, multiply, normal, normal;
+}
+
+.b-slide--02 {
+  background: linear-gradient(
+      180deg,
+      rgba(22, 31, 38, 0) 70.13%,
+      rgba(22, 31, 38, 0.6) 100%
+    ),
+    linear-gradient(0deg, rgba(22, 31, 38, 0.4) 0%, rgba(22, 31, 38, 0.4) 100%),
+    url(./../../img/benefits/02-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply, multiply, normal, normal;
+}
+
+.b-slide__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: clamp(128px, -14.5rem + 30vw, 200px);
+}
+
+.b-slide__title {
+  max-width: 489px;
+  font-size: clamp(24px, 1.122rem + 2.09vw, 48px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.08;
+  text-transform: uppercase;
+}
+
+.b-slide__img-wrapper {
+  position: relative;
+}
+
+.b-slide__number {
+  position: absolute;
+  font-size: clamp(50px, 0.887rem + 12.35vw, 192px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.042;
+  text-transform: uppercase;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.b-slide__img {
+  width: clamp(260px, 10.765rem + 30.26vw, 608px);
+  height: clamp(205px, 8.478rem + 23.91vw, 480px);
+  overflow: hidden;
+
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(22, 31, 38, 0.12) 0%,
+      rgba(22, 31, 38, 0.12) 100%
+    );
+  backdrop-filter: blur(20px);
+
+}
+
+@media (max-width: 1023px) {
+  .b-slide__number {
+    display: none;
+  }
+  .b-slide__wrapper {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .b-slide__wrapper {
+    flex-direction: column;
+  }
+}

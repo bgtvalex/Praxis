@@ -1,0 +1,23 @@
+.modal
+	.modal__window
+		.modal__close 
+		.modal__content 
+			.modal__title оставить заявку
+			form.modal__form#form
+				label.modal__label имя 
+					input.modal__input(type='text' name='name')
+				label.modal__label номер телефона* 
+					input.modal__input#phone(type='tel' name='phone' autocomplete="off")
+					.modal__alarm Введите правильный номер телефона
+				label.modal__label Комментарий 
+					input.modal__input(type='text' name='comments')
+
+				label.modal__label-file
+					input.modal__input-file(type='file' name='file' multiple)
+					span.modal__input-desc Прикрепить файл
+
+				.modal__loads
+
+				p.modal__subtext Нажмите на кнопку или перетащите файл в поле.
+				button.modal__btn.btn#btn Отправить
+				p.modal__text Нажимая на кнопку, вы принимаете политику конфиденциальности и даете согласие на обработку персональных данных.

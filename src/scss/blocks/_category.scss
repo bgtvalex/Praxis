@@ -1,0 +1,327 @@
+.category {
+  position: relative;
+  padding: 112px 0;
+}
+
+.category__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.category__col {
+  &:nth-child(1) {
+    position: relative;
+    height: 100vh;
+  }
+}
+
+.category__sl {
+  position: relative;
+  width: 389px;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  background-color: gray;
+  overflow: hidden;
+}
+
+.category__scrollbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: -24px;
+  z-index: 1;
+}
+
+.swiper-pagination-bullet {
+  height: 2px !important;
+  width: 16px !important;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 2px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--green) !important;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  border-radius: 2px !important;
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.category__sl-1 {
+  height: 492px;
+}
+
+.category__sl-2 {
+  height: 345px;
+}
+
+.category__sl-3 {
+  height: 296px;
+}
+
+.category__sl-4 {
+  height: 443px;
+}
+
+.category__text {
+  position: absolute;
+  width: 321px;
+  color: rgba(40, 40, 40, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+  bottom: 0;
+}
+
+.c-slide {
+  padding: 24px;
+  border-radius: 16px;
+  background-color: gray;
+}
+
+.c-slide__title {
+  color: var(--white);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.22;
+  text-transform: uppercase;
+}
+
+.c-slider-1 {
+  height: 492px;
+}
+
+.c-slider-2 {
+  height: 345px;
+}
+
+.c-slider-3 {
+  height: 296px;
+}
+
+.c-slider-4 {
+  height: 443px;
+}
+
+.c-slider-5 {
+  height: 296px;
+}
+
+// slider-1 slides
+
+.c-slider-1.c-slide--01 {
+  background: linear-gradient(
+      0deg,
+      rgba(22, 31, 38, 0.3) 0%,
+      rgba(22, 31, 38, 0.3) 100%
+    ),
+    url(./../../img/category/c-01.png);
+  backdrop-filter: blur(20px);
+  background-size: cover;
+}
+
+.c-slider-1.c-slide--02 {
+  background: linear-gradient(
+      0deg,
+      rgba(22, 31, 38, 0.3) 0%,
+      rgba(22, 31, 38, 0.3) 100%
+    ),
+    url(./../../img/category/c-02.png);
+  backdrop-filter: blur(20px);
+  background-size: cover;
+}
+
+.c-slider-1.c-slide--03 {
+  background: linear-gradient(
+      0deg,
+      rgba(22, 31, 38, 0.3) 0%,
+      rgba(22, 31, 38, 0.3) 100%
+    ),
+    url(./../../img/category/c-03.png);
+  backdrop-filter: blur(20px);
+  background-size: cover;
+}
+
+// slider-2 slides
+
+.c-slider-2.c-slide--01 {
+  background: linear-gradient(
+      0deg,
+      rgba(22, 31, 38, 0.3) 0%,
+      rgba(22, 31, 38, 0.3) 100%
+    ),
+    url(./../../img/category/c-02.png);
+  backdrop-filter: blur(20px);
+  background-size: cover;
+}
+.c-slider-2.c-slide--02 {
+  background: linear-gradient(
+      0deg,
+      rgba(22, 31, 38, 0.3) 0%,
+      rgba(22, 31, 38, 0.3) 100%
+    ),
+    url(./../../img/category/c-03.png);
+
+  backdrop-filter: blur(20px);
+  background-size: cover;
+}
+.c-slider-2.c-slide--03 {
+  background: linear-gradient(
+      0deg,
+      rgba(22, 31, 38, 0.3) 0%,
+      rgba(22, 31, 38, 0.3) 100%
+    ),
+    url(./../../img/category/c-01.png);
+  backdrop-filter: blur(20px);
+  background-size: cover;
+}
+
+// slider-3 slides
+
+.c-slider-3.c-slide--01 {
+  background: linear-gradient(
+      0deg,
+      rgba(22, 31, 38, 0.3) 0%,
+      rgba(22, 31, 38, 0.3) 100%
+    ),
+    url(./../../img/category/c-03.png);
+  backdrop-filter: blur(20px);
+  background-size: cover;
+}
+
+.c-slider-3.c-slide--02 {
+  background: linear-gradient(
+      0deg,
+      rgba(22, 31, 38, 0.3) 0%,
+      rgba(22, 31, 38, 0.3) 100%
+    ),
+    url(./../../img/category/c-03.png);
+  backdrop-filter: blur(20px);
+  background-size: cover;
+}
+
+.c-slider-3.c-slide--03 {
+  background: linear-gradient(
+      0deg,
+      rgba(22, 31, 38, 0.3) 0%,
+      rgba(22, 31, 38, 0.3) 100%
+    ),
+    url(./../../img/category/c-01.png);
+  backdrop-filter: blur(20px);
+  background-size: cover;
+}
+
+// slider-4 slides
+
+.c-slider-4.c-slide--01 {
+  background: linear-gradient(
+      0deg,
+      rgba(22, 31, 38, 0.3) 0%,
+      rgba(22, 31, 38, 0.3) 100%
+    ),
+    url(./../../img/category/c-04.png);
+  backdrop-filter: blur(20px);
+  background-size: cover;
+}
+
+.c-slider-4.c-slide--02 {
+  background: linear-gradient(
+      0deg,
+      rgba(22, 31, 38, 0.3) 0%,
+      rgba(22, 31, 38, 0.3) 100%
+    ),
+    url(./../../img/category/c-03.png);
+  backdrop-filter: blur(20px);
+  background-size: cover;
+}
+
+.c-slider-4.c-slide--03 {
+  background: linear-gradient(
+      0deg,
+      rgba(22, 31, 38, 0.3) 0%,
+      rgba(22, 31, 38, 0.3) 100%
+    ),
+    url(./../../img/category/c-01.png);
+  backdrop-filter: blur(20px);
+  background-size: cover;
+}
+
+// slider-5 slides
+
+.c-slider-5.c-slide--01 {
+  background: linear-gradient(
+      0deg,
+      rgba(22, 31, 38, 0.3) 0%,
+      rgba(22, 31, 38, 0.3) 100%
+    ),
+    url(./../../img/category/c-05.png);
+  backdrop-filter: blur(20px);
+  background-size: cover;
+}
+
+.c-slider-5.c-slide--02 {
+  background: linear-gradient(
+      0deg,
+      rgba(22, 31, 38, 0.3) 0%,
+      rgba(22, 31, 38, 0.3) 100%
+    ),
+    url(./../../img/category/c-03.png);
+  backdrop-filter: blur(20px);
+  background-size: cover;
+}
+
+.c-slider-5.c-slide--03 {
+  background: linear-gradient(
+      0deg,
+      rgba(22, 31, 38, 0.3) 0%,
+      rgba(22, 31, 38, 0.3) 100%
+    ),
+    url(./../../img/category/c-01.png);
+  backdrop-filter: blur(20px);
+  background-size: cover;
+}
+
+@media (max-width: 1247px) {
+  .category__row {
+    justify-content: center;
+  }
+  .category__col {
+    margin-bottom: 40px;
+  }
+  .category__col {
+    &:nth-child(1) {
+      height: 75vh;
+    }
+  }
+}
+
+@media (max-width: 424px) {
+  .category {
+    padding: 112px 0 12px;
+  }
+  .category__col {
+    width: 100%;
+  }
+  .category__sl {
+    width: 100%;
+  }
+
+  .category__text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 415px) {
+  .category__col {
+    &:nth-child(1) {
+      height: 100vh;
+    }
+  }
+}

@@ -1,0 +1,355 @@
+.modal {
+  display: flex;
+  position: fixed;
+  top: -150vh;
+  width: 100%;
+  height: 100vh;
+  background: rgba(22, 31, 38, 0.8);
+  z-index: 501;
+
+  justify-content: center;
+  align-items: center;
+  transition: top 0.5s ease;
+}
+
+.modal.active {
+  top: 0;
+}
+
+.modal__window {
+  position: relative;
+  max-width: 608px;
+  display: inline-flex;
+  padding: 64px 72px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  border-radius: 16px;
+  background: #fff;
+}
+
+.modal__window.active {
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: red;
+    border-radius: 16px;
+    background-color: rgba(133, 26, 70, 0.5);
+    border: 2px dashed var(--black);
+    z-index: 99;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: -56px;
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  background-color: var(--white);
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(./../../img/icon/close.svg);
+    background-size: contain;
+  }
+}
+
+.modal__title {
+  margin-bottom: clamp(12px, 0.309rem + 2.43vw, 40px);
+  text-align: center;
+  font-family: CoFo Sans;
+  font-size: clamp(22px, 1.154rem + 1.22vw, 36px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+
+.modal__form {
+  width: 100%;
+}
+
+.modal__label {
+  width: 100%;
+  margin-bottom: 8px;
+  color: var(--gray);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500; /* 100% */
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+}
+
+.modal__input {
+  margin-bottom: clamp(12px, 0.561rem + 1.04vw, 24px);
+  width: 100%;
+  height: clamp(26px, 1.026rem + 3.3vw, 64px);
+  padding: 0px 20px;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--gray-light);
+  color: var(--black);
+
+  text-align: center;
+  font-size: clamp(14px, 0.843rem + 0.17vw, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+.alarm{
+  border: 1px solid red !important;
+}
+
+.modal__alarm {
+  display: none;
+  margin-top: -8px;
+  color: #f00;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  text-transform: lowercase;
+}
+
+.modal__alarm.active {
+  display: block;
+}
+
+
+
+.modal__label-file {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.modal__input-file {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.modal__input-desc {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin: 0;
+  width: 100%;
+  padding: 12px 20px 12px 20px;
+  border-radius: 99px;
+  border: 1px dashed rgba(40, 40, 40, 0.2);
+  color: var(--black);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(./../../img/icon/clip.svg);
+  }
+
+  &.active {
+    background-color: rgba(133, 26, 70, 0.5);
+    border: 2px dashed var(--black);
+  }
+}
+
+.modal__input-file:hover + .modal__input-desc {
+  background: rgba(133, 26, 70, 1);
+  color: var(--white);
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(./../../img/icon/clip-white.svg);
+  }
+}
+
+.modal__input-file:disabled + .modal__input-desc {
+  background: rgba(13, 26, 70, 0.5);
+}
+
+.modal__subtext {
+  color: rgba(40, 40, 40, 0.4);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.14;
+  margin-bottom: 40px;
+}
+
+.modal__loads {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 15px;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  max-height: 100px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) rgba(40, 40, 40, 0.4);
+
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(40, 40, 40, 0.4);
+  }
+  &:-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+    border-radius: 2px;
+  }
+}
+
+.modal__card {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  transition: all 0.2s ease-in;
+}
+
+.modal__card-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 15px;
+  height: 15px;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  color: var(--white);
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.modal__card:hover .modal__card-close {
+  display: flex;
+}
+
+.modal__card-img {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border: 1px solid var(--gray);
+  border-radius: 10px;
+}
+
+.modal__card-title {
+  font-size: 12px;
+}
+
+.modal__btn {
+  margin-bottom: 16px;
+  width: 100%;
+  padding: 12px 0;
+  color: var(--white);
+
+  &::before {
+    position: absolute;
+    left: 20px;
+  }
+}
+
+.modal__btn:disabled {
+  opacity: .8;
+}
+
+.modal__text {
+  color: rgba(40, 40, 40, 0.4);
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.33;
+}
+
+@media (max-width: 1920px) {
+  .modal__window {
+    max-width: 450px;
+    padding: 32px 37px;
+  }
+
+  .modal__title {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+
+  .modal__input {
+    margin-bottom: 12px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .modal__window,
+  .modal-s__window {
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal__close,
+  .modal-s__close {
+    right: 0;
+  }
+
+  .modal__window,
+  .modal-s__window {
+    width: 90%;
+    height: auto;
+    padding: 50px 40px;
+  }
+
+  .modal__label {
+    font-size: 12px;
+  }
+
+  .modal__input-desc {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,47 @@
+header.header
+	.header__row
+		.header__top
+			.header__logo
+				a(href="index.html")
+					img(src="./../../img/icon/logo.svg", alt="Лого")
+			.header__logo--fixed
+				a(href="index.html")
+					img(src="./../../img/icon/logo-fixed.svg", alt="Лого")
+			ul.header__nav
+				li.header__item
+					a.active(href='index.html#about') О компании
+				li.header__item
+					a(href='category-page.html#categories') Каталог оборудования
+				li.header__item
+					a(href='#benefits') Преимущества
+				li.header__item
+					a(href='#category') Последние поставки
+				li.header__item
+					a(href='#footer') Контакты
+			ul.header__contacts 
+				li.header__item 
+					a(href='mailto:mail@mail.ru') sale@site.ru
+				li.header__item 
+					.header__line
+				li.header__item 
+					a.header__tel(href='tel:8900000000') 8 (800) 2000-600
+				button.header__top-btn.btn оставить заявку
+			.mobile-nav-btn
+				.nav-icon
+
+		.header__content 
+			
+
+		.header__bottom 
+			.header__current-slide 1
+				<span>/5</span>
+			.header__controls-wrapper
+				.header__scrollbar 
+				.controls 
+					button.controls-btn.prev#prev
+					button.controls-btn.next#next
+			button.header__btn.btn оставить заявку
+	.header__slider 
+		include header-slider
+
+include ./mobile-nav
