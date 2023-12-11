@@ -63,7 +63,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(./../../img/icon/close.svg);
+    background-image: url(./../img/icon/close.svg);
     background-size: contain;
   }
 }
@@ -177,7 +177,7 @@
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url(./../../img/icon/clip.svg);
+    background-image: url(./../img/icon/clip.svg);
   }
 
   &.active {
@@ -197,7 +197,7 @@
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url(./../../img/icon/clip-white.svg);
+    background-image: url(./../img/icon/clip-white.svg);
   }
 }
 
