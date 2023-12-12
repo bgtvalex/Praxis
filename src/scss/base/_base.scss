@@ -13,6 +13,7 @@ body {
   font-size: clamp(16px, 0.857rem + 0.71vw, 24px);
   scrollbar-width: thin;
   scrollbar-color: var(--accent) red;
+  overflow-x: hidden;
 
   &::-webkit-scrollbar {
     width: 2px;
