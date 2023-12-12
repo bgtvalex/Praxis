@@ -7,6 +7,7 @@
 * [Swiper](https://swiperjs.com/) - The Most Modern Mobile Touch Slider
 * [imask](https://imask.js.org/) - Vanilla javascript input mask.
 * [IntersectionObserver](https://www.youtube.com/watch?v=ZYqBZmU-tA0) - Intersection Observer API
+* [loader](https://cssloaders.github.io/) - CSS loaders and Spinners
 
 ### Skills
 * adaptive layout
