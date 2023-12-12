@@ -30,19 +30,10 @@ const plumberNotify = (title) => {
   }
 }
 
-// gulp.task('html:dev', function () {
-//   return gulp
-//     .src(['./src/html/**/*.html', '!./src/html/blocks/*.html'])
-//     .pipe(changed('./build/', { hasChanged: changed.compareContents }))
-//     .pipe(plumber(plumberNotify('HTML')))
-//     .pipe(fileInclude(fileIncludeSettings))
-//     .pipe(gulp.dest('./build/'))
-// })
-
 gulp.task('gulpPug:dev', function () {
   return gulp
     .src(['./src/pug/**/*.pug', '!./src/html/blocks/*.html'])
-    .pipe(gulpPug())
+    .pipe(gulpPug({pretty: true}))
     .pipe(changed('./build/', { hasChanged: changed.compareContents }))
     .pipe(plumber(plumberNotify('HTML')))
     .pipe(fileInclude(fileIncludeSettings))
@@ -67,7 +58,7 @@ gulp.task('js:dev', function () {
       .src('./src/js/*.js')
       .pipe(changed('./build/js'))
       .pipe(plumber(plumberNotify('JS')))
-      // .pipe(babel())
+      .pipe(babel())
       .pipe(webpack(require('./../webpack.config.js')))
       .pipe(gulp.dest('./build/js'))
   )

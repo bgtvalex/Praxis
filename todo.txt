@@ -49,3 +49,6 @@
 	* добавить .webp и source к крупным фото
 * удалить все console.log
 * сделать анимацию в слайдере
+* убрать минификация html, css
+* убрать blocks и parts
+* preloader

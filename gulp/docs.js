@@ -60,12 +60,12 @@ const plumberNotify = (title) => {
 gulp.task('gulpPug:docs', function () {
   return gulp
     .src(['./src/pug/**/*.pug', '!./src/html/blocks/*.html'])
-    .pipe(gulpPug())
+    .pipe(gulpPug({pretty: true}))
     .pipe(changed('./docs/'))
     .pipe(plumber(plumberNotify('HTML')))
     .pipe(fileInclude(fileIncludeSettings))
     .pipe(webpHTML())
-    .pipe(htmlclean())
+    // .pipe(htmlclean())
     .pipe(gulp.dest('./docs/'))
 })
 
@@ -76,11 +76,11 @@ gulp.task('sass:docs', function () {
     .pipe(plumber(plumberNotify('SASS')))
     .pipe(maps.init())
     .pipe(autoprefixer())
-    .pipe(sassGlob())
-    .pipe(webpCss())
     .pipe(groupMedia())
+    .pipe(sassGlob())
     .pipe(sass())
     .pipe(csso())
+    // .pipe(webpCss())
     .pipe(maps.write())
     .pipe(gulp.dest('./docs/css/'))
 })
