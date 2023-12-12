@@ -59,7 +59,7 @@ const plumberNotify = (title) => {
 
 gulp.task('gulpPug:docs', function () {
   return gulp
-    .src(['./src/html/**/*.pug', '!./src/html/blocks/*.html'])
+    .src(['./src/pug/**/*.pug', '!./src/html/blocks/*.html'])
     .pipe(gulpPug())
     .pipe(changed('./docs/'))
     .pipe(plumber(plumberNotify('HTML')))
