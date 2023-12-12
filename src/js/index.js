@@ -1,6 +1,9 @@
 import mobileNav from './modules/mobile-nav.js'
 mobileNav()
 
+import loaderFunc from './modules/loader.js'
+loaderFunc()
+
 import observerFunc from './modules/observer.js'
 observerFunc()
 

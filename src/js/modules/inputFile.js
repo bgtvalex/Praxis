@@ -21,21 +21,19 @@ function inputFile() {
   })
 
   dropPut.addEventListener('dragenter', (e) => {
-    console.log('dragenter', )
     e.preventDefault()
     dropPut.classList.add('active')
   })
   dropPut.addEventListener('dragleave', (e) => {
-    console.log('%cdragleave', 'color: red')
+    // console.log('%cdragleave', 'color: red')
     e.preventDefault()
     dropPut.classList.remove('active')
   })
   dropPut.addEventListener('dragover', (e) => {
-    console.log('%cdragover', 'color: lightgreen')
+    // console.log('%cdragover', 'color: lightgreen')
     e.preventDefault()
   })
   dropPut.addEventListener('drop', (e) => {
-    console.log('drop')
     e.preventDefault()
     addFiles(e.dataTransfer.files)
     dropPut.classList.remove('active')

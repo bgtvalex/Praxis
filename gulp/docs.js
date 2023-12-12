@@ -59,13 +59,13 @@ const plumberNotify = (title) => {
 
 gulp.task('gulpPug:docs', function () {
   return gulp
-    .src(['./src/pug/**/*.pug', '!./src/html/blocks/*.html'])
+    .src(['./src/pug/**/*.pug', '!./src/pug/blocks/**/*.pug', '!./src/pug/parts/**/*.pug'])
     .pipe(gulpPug({pretty: true}))
     .pipe(changed('./docs/'))
     .pipe(plumber(plumberNotify('HTML')))
     .pipe(fileInclude(fileIncludeSettings))
     .pipe(webpHTML())
-    // .pipe(htmlclean())
+    .pipe(htmlclean())
     .pipe(gulp.dest('./docs/'))
 })
 
