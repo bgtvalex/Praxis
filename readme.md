@@ -6,8 +6,9 @@
 ### Libraries:
 * [Swiper](https://swiperjs.com/) - The Most Modern Mobile Touch Slider
 * [imask](https://imask.js.org/) - Vanilla javascript input mask.
+* [scrollreveal](https://scrollrevealjs.org/) - Animate elements as they scroll into view.
 * [IntersectionObserver](https://www.youtube.com/watch?v=ZYqBZmU-tA0) - Intersection Observer API
-* [loader](https://cssloaders.github.io/) - CSS loaders and Spinners
+* [cssloader](https://cssloaders.github.io/) - CSS loaders and Spinners
 
 ### Skills
 * adaptive layout
