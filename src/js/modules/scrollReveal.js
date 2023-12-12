@@ -2,11 +2,25 @@ import ScrollReveal from 'scrollreveal'
 
 // Базовые настройки
 ScrollReveal({
-  distance: '100px',
+  reset: true,
+  distance: '150%',
   duration: 2000,
+  delay: 100
 })
 
-ScrollReveal().reveal(`.start__title, .start__subtitle, .start__img, .btn, .steps__accent-title, .steps__cards, .board__content, .title-2, .acc__item, .about__desc, .diff__card-title, .diff__item, .i-card, .contacts__item, .form__input--wrapper, .footer__logo` , {
+ScrollReveal().reveal(`.hints` , {
+  origin: 'top',
+})
+
+ScrollReveal().reveal(`.about__undertext, .equipment__title` , {
+  origin: 'left',
+})
+
+ScrollReveal().reveal(`.about__subtext, .images,  .category__sl` , {
+  origin: 'right',
+})
+
+ScrollReveal().reveal(`.equipment__subtitle, .equipment__table, .category__text` , {
   origin: 'bottom',
 })
 

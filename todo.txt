@@ -51,4 +51,4 @@
 * сделать анимацию в слайдере
 - убрать минификация html, css
 + убрать blocks и parts
-+ preloader
+* preloader absolute

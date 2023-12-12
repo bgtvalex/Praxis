@@ -4,6 +4,10 @@ import 'swiper/css/bundle';
 function sliderHeader () {
 	const header = new Swiper('.header-slider', {
 		loop: true,
+		parallax: true,
+		autoplay: {
+			delay: 5000,
+		},
 		pagination: {
 			el: '.header__current-slide',
 			type: 'fraction'
@@ -19,6 +23,10 @@ function sliderHeader () {
 
 	const benefits = new Swiper('.b-slider', {
 		loop: true,
+		parallax: true,
+		autoplay: {
+			delay: 5000,
+		},
 		navigation: {
 			nextEl: '#b-next',
 			prevEl: '#b-prev',
@@ -27,6 +35,9 @@ function sliderHeader () {
 
 	const categorySlider1 = new Swiper('#category-slider-1', {
 		loop: true,
+		autoplay: {
+			delay: 5000,
+		},
 		pagination: {
 			el: ".category__scrollbar-1",
 			clickable: true,
@@ -35,6 +46,9 @@ function sliderHeader () {
 
 	const categorySlider2 = new Swiper('#category-slider-2', {
 		loop: true,
+		autoplay: {
+			delay: 5000,
+		},
 		pagination: {
 			el: ".category__scrollbar-2",
 			clickable: true,
@@ -43,6 +57,9 @@ function sliderHeader () {
 
 	const categorySlider3 = new Swiper('#category-slider-3', {
 		loop: true,
+		autoplay: {
+			delay: 5000,
+		},
 		pagination: {
 			el: ".category__scrollbar-3",
 			clickable: true,
@@ -51,6 +68,9 @@ function sliderHeader () {
 
 	const categorySlider4 = new Swiper('#category-slider-4', {
 		loop: true,
+		autoplay: {
+			delay: 5000,
+		},
 		pagination: {
 			el: ".category__scrollbar-4",
 			clickable: true,
@@ -59,6 +79,9 @@ function sliderHeader () {
 
 	const categorySlider5 = new Swiper('#category-slider-5', {
 		loop: true,
+		autoplay: {
+			delay: 5000,
+		},
 		pagination: {
 			el: ".category__scrollbar-5",
 			clickable: true,
