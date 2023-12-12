@@ -47,8 +47,8 @@
 + обновить фото с figma
 + оптимизировать фото
 	+ добавить .webp и source к крупным фото
-* удалить все console.log
++ удалить все console.log
 * сделать анимацию в слайдере
-* убрать минификация html, css
-* убрать blocks и parts
-* preloader
+- убрать минификация html, css
++ убрать blocks и parts
++ preloader
