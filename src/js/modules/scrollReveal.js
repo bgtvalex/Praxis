@@ -2,7 +2,6 @@ import ScrollReveal from 'scrollreveal'
 
 // Базовые настройки
 ScrollReveal({
-  reset: true,
   distance: '150%',
   duration: 2000,
   delay: 100
