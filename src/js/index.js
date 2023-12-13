@@ -10,8 +10,8 @@ observerFunc()
 import slidersFunc from './modules/swiper-slides.js'
 slidersFunc()
 
-import scrollRevealFunc from './modules/scrollReveal.js'
-scrollRevealFunc()
+// import scrollRevealFunc from './modules/scrollReveal.js'
+// scrollRevealFunc()
 
 // equipment images
 import imagesFunc from './modules/images.js'
