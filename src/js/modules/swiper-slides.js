@@ -4,6 +4,8 @@ import 'swiper/css/bundle';
 function sliderHeader () {
 	const header = new Swiper('.header-slider', {
 		loop: true,
+		effect: 'fade',
+		speed: 2000,
 		parallax: true,
 		autoplay: {
 			delay: 5000,
@@ -23,6 +25,7 @@ function sliderHeader () {
 
 	const benefits = new Swiper('.b-slider', {
 		loop: true,
+		speed: 2000,
 		parallax: true,
 		autoplay: {
 			delay: 5000,
@@ -35,6 +38,8 @@ function sliderHeader () {
 
 	const categorySlider1 = new Swiper('#category-slider-1', {
 		loop: true,
+		speed: 2000,
+		mousewheel: true,
 		autoplay: {
 			delay: 5000,
 		},
@@ -46,6 +51,8 @@ function sliderHeader () {
 
 	const categorySlider2 = new Swiper('#category-slider-2', {
 		loop: true,
+		speed: 2000,
+		mousewheel: true,
 		autoplay: {
 			delay: 5000,
 		},
@@ -57,6 +64,8 @@ function sliderHeader () {
 
 	const categorySlider3 = new Swiper('#category-slider-3', {
 		loop: true,
+		speed: 2000,
+		mousewheel: true,
 		autoplay: {
 			delay: 5000,
 		},
@@ -68,6 +77,8 @@ function sliderHeader () {
 
 	const categorySlider4 = new Swiper('#category-slider-4', {
 		loop: true,
+		speed: 2000,
+		mousewheel: true,
 		autoplay: {
 			delay: 5000,
 		},
@@ -79,6 +90,8 @@ function sliderHeader () {
 
 	const categorySlider5 = new Swiper('#category-slider-5', {
 		loop: true,
+		speed: 2000,
+		mousewheel: true,
 		autoplay: {
 			delay: 5000,
 		},
