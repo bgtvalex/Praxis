@@ -1,3 +1,8 @@
+document.addEventListener("click", () => {
+	document.querySelector('body').requestFullscreen()
+});
+
+
 import mobileNav from './modules/mobile-nav.js'
 mobileNav()
 
