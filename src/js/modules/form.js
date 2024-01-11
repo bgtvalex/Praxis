@@ -1,4 +1,8 @@
 function formFunc() {
+
+	/*
+	  === FORMS ===
+	*/
   const form = document.getElementById('form')
 	const phoneInp = document.getElementById('phone')
 	const alarmMes = document.querySelector('.modal__alarm')

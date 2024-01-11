@@ -1,5 +1,6 @@
 const config = {
   mode: 'production',
+  devtool: 'source-map',
   entry: {
     index: './src/js/index.js',
     // contacts: './src/js/contacts.js',
@@ -16,6 +17,10 @@ const config = {
       },
     ],
   },
+  optimization: {
+    minimize: false
+ },
+ 
 }
 
 module.exports = config
